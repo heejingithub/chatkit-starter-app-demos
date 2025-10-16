@@ -43,6 +43,12 @@ Update `.env.local` with the variables that match your setup.
 - (optional) `CHATKIT_API_BASE` - This is a customizable base URL for the ChatKit API endpoint
 
 > Note: if your workflow is using a model requiring organization verification, such as GPT-5, make sure you verify your organization first. Visit your [organization settings](https://platform.openai.com/settings/organization/general) and click on "Verify Organization".
+>
+> ### Optional: Configure credentials from the browser
+
+Navigate to `http://localhost:3000/setup` to open a client-side configuration screen. This page lets you enter your OpenAI API key and ChatKit workflow ID directly in the browser, stores them in `localStorage`, and pre-fills any previously saved values. You can clear the stored data, save the credentials for later, or save and immediately return to the main chat interface. If you prefer, you can continue managing the same settings through environment variables instead.
+
+<img src="./public/docs/setup-page.jpg" width=500 />
 
 ### 4. Run the app
 
@@ -52,9 +58,6 @@ npm run dev
 
 Visit `http://localhost:3000` and start chatting. Use the prompts on the start screen to verify your workflow connection, then customize the UI or prompt list in [`lib/config.ts`](lib/config.ts) and [`components/ChatKitPanel.tsx`](components/ChatKitPanel.tsx).
 
-### Optional: Configure credentials from the browser
-
-Navigate to `http://localhost:3000/setup` to open a client-side configuration screen. This page lets you enter your OpenAI API key and ChatKit workflow ID directly in the browser, stores them in `localStorage`, and pre-fills any previously saved values. You can clear the stored data, save the credentials for later, or save and immediately return to the main chat interface. If you prefer, you can continue managing the same settings through environment variables instead.
 
 ### 5. Deploy your app
 
