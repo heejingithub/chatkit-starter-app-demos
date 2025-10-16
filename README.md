@@ -48,7 +48,7 @@ Update `.env.local` with the variables that match your setup.
 
 Navigate to `http://localhost:3000/setup` to open a client-side configuration screen. This page lets you enter your OpenAI API key and ChatKit workflow ID directly in the browser, stores them in `localStorage`, and pre-fills any previously saved values. You can clear the stored data, save the credentials for later, or save and immediately return to the main chat interface. If you prefer, you can continue managing the same settings through environment variables instead.
 
-<img src="./public/docs/setup-page.jpg"/>
+<img src="./public/docs/setup-page.png"/>
 
 ### 4. Run the app
 
